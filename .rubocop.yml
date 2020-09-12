@@ -1,0 +1,57 @@
+inherit_from: .rubocop_todo.yml
+
+require:
+  - rubocop-rails
+
+AllCops:
+  #rubyのバージョン指定
+  TargetRubyVersion: 2.6
+
+  #除外ディレクトリ
+  Exclude:
+    - bin/*
+    - db/schema.rb
+    - vendor/**/*
+
+# 文字列のfreeze要求を無視
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Gemfileのアルファベット順記入を無視
+Bundler/OrderedGems:
+  Enabled: false
+
+# 配列に使用されるブラケットの周囲にスペースがあるかどうかを無視
+Layout/SpaceInsideArrayLiteralBrackets:
+  Enabled: false
+
+# #と文字列の間の半角スペースの有無を無視
+Layout/LeadingCommentSpace:
+  Enabled: false
+
+# 日本語でのコメントを許可
+Style/AsciiComments:
+  Enabled: false
+
+# ブロックコメントを許可
+Style/BlockComments:
+  Enabled: false
+
+# ネストしたモジュール/クラス定義の推奨記法を無視
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+# "Missing top-level class documentation comment"を無視
+Style/Documentation:
+  Enabled: false
+
+# 数字リテラルを三桁区切りで_で区切っているかどうかを無視
+Style/NumericLiterals:
+  Enabled: false
+
+# "Prefer single-quoted strings when you don't need string interpolation or special symbols"を無視
+Style/StringLiterals:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
