@@ -16,8 +16,6 @@
 # Uncomment the following lines to make the configuration take effect.
 
 PreCommit:
-  ALL:
-    quiet: false
   RuboCop:
     enabled: true
     command: ["bundle", "exec", "rubocop", "-c", "./.rubocop.yml"]
