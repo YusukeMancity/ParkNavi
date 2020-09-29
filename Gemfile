@@ -15,7 +15,6 @@ gem "slim-rails"
 gem "html2slim"
 gem "bcrypt"
 gem "devise"
-gem "bootstrap", "~> 4.5.0"
 gem "jquery-rails"
 
 group :development, :test do

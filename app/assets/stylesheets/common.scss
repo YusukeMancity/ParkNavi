@@ -1,0 +1,57 @@
+@import "colors";
+
+/* 共通レイアウト ================================ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $font-color-black;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+a:hover {
+  color: $font-color-gray;
+  text-decoration: none;
+}
+
+body {
+  background-color: $main-color;
+  min-height: 1vh;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  padding-top: 70px;
+}
+
+/* ヘッダー ================================ */
+header {
+  height: auto;
+  position: fixed;
+  width: 100%;
+  background-color: $green;
+}
+
+.header-logo {
+  font-size: 25px;
+  margin-left: 15px;
+  float: left;
+  padding: 10px 10px 10px 0;
+}
+
+nav ul li {
+  float: right;
+  padding: 15px;
+}
