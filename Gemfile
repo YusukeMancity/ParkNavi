@@ -14,7 +14,6 @@ gem "bootsnap", ">= 1.1.0", require: false
 gem "slim-rails"
 gem "html2slim"
 gem "bcrypt"
-gem "devise"
 gem "jquery-rails"
 
 group :development, :test do

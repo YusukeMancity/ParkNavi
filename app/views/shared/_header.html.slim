@@ -4,10 +4,10 @@ header
       div.header-logo
         = link_to "公園なび", "/"
     nav
-      - if user_signed_in?
-        strong = link_to current_user.username, pages_show_path, class: "user-name"
-        = link_to "プロフィール変更", edit_user_registration_path, class: "user-edit"
-        = link_to "ログアウト", destroy_user_session_path, class: "logout" ,method: :delete
-      - else
-        = link_to "新規登録", new_user_registration_path, class: "user-registration"
-        = link_to "ログイン", new_user_session_path, class: "login"
+      ul
+        li
+          div.user-login
+            = link_to "ログイン", "#", class: "btn btn-sm btn-primary"
+        li
+          div.user-signin
+            = link_to "新規登録", "#", class: "btn btn-sm btn-primary"

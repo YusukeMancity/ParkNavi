@@ -51,11 +51,7 @@ header {
   padding: 10px 10px 10px 0;
 }
 
-nav {
+nav ul li {
   float: right;
   padding: 15px;
-  .login,
-  .user-registration {
-    padding: 10px;
-  }
 }
